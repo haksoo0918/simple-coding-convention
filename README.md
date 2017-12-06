@@ -1,5 +1,10 @@
 # Simple Coding Convention
 
+## 공통
+- 인코딩은 UTF-8을 기본으로 한다.
+- 들여쓰기는 1탭으로 하고 탭크기는 4로 한다.
+- 빈줄은 두줄이상 사용하지 않는다.
+
 ## HTML
 - 테그나 속성은 특별한 경우를 제외하고 소문자를 사용한다.
 - 속성값은 큰따옴표`" "`를 사용하여 감싼다.(data 속성으로 json을 사용할때 등의 특별한 상황은 제외)
@@ -11,12 +16,16 @@
 ```html
 <button id="btn_reg" class="btn btn-primary" type="submit" title="등록" data-toggle="tooltip">등록</button>
 ```
-- 들여쓰기는 1탭으로 하고 탭크기는 4로 한다.
 - 단일테그 끝에 마침표시는 생략한다.(br 등)
-- 빈줄은 두줄이상 사용하지 않는다.
+- layout 에서 container 또는 wrap 의 역활을 하는 테그는 마침테그 이후에 주석으로 역활을 명시해준다.
+```html
+<div class="container">
+	.......
+</div>
+<!-- / .container -->
+```
 
 ## CSS
-- html파일 내에 선언하지 않고 파일을 따로 빼는것을 원칙으로 한다.
 - 속성값을 따옴표로 감싸야 하는 경우에만 작은따옴표`' '`를 사용하여 감싼다.
 ```css
 font-family: 'dotum';
