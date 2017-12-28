@@ -11,6 +11,29 @@
 ```html
 <html lang="ko">
 ```
+- `head`와 `body` 바로 안쪽은 들여쓰기 하지 않는다.
+```html
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ... 생략 ... -->
+</head>
+
+<body>
+
+<div class="wrapper">
+	<div class="container">
+		<!-- ... 생략 ... -->
+	</div>
+</div>
+
+<script>
+// ... 생략 ...
+</script>
+</body>
+</html>
+```
 - 속성중 id나 class를 앞쪽에 배치한다.
 - 속성순서 id > class > 필수속성(img 에 alt 등) > 기타 속성 > data 속성 > 속성값을 할당하지 않아도 되는 속성(input 에 require 등)
 ```html
@@ -26,6 +49,18 @@
 ```
 
 ## CSS
+- 공통 스타일은 'common.css'로, 그 외는 화면파일과 동일한 이름을 부여한다.
+- 최상단에 파일의 이름이나 작성자, 작성일 등의 설명 주석을 적는다.
+```css
+/**
+ * [project name] 공통 스타일
+ * file name: common.css
+ * author: haksoo
+ * modify: [other]
+ * date: 2000-00-00
+ * last modify date: 2000-00-00
+ */
+```
 - 속성값을 따옴표로 감싸야 하는 경우에만 작은따옴표`' '`를 사용하여 감싼다.
 ```css
 font-family: 'dotum';
@@ -33,10 +68,13 @@ font-family: 'dotum';
 - 속성은 한줄에 한줄씩 처리한다.
 - 되도록 class 셀렉터를 사용한다.
 - 주석기호와 내용사이에는 공백을 사용하여 뛰운다.
-- 추가 또는 수정한 부분은 날짜와 수정내용, 작성자 등을 간략하게 기입한다.
+- 되도록이면 추가 또는 수정한 부분은 날짜와 수정내용, 작성자 등을 간략하게 기입한다.
 ```css
 /* li width 값 수정 - 20150511 haksoo */
 ```
+
+## SCSS
+- 아직은 아무생각이 없음.
 
 ## JavaScript
 - strict 모드를 기본으로 사용한다.
