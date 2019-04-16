@@ -96,15 +96,11 @@ font-family: 'dotum';
 /* li width 값 수정 - 20150511 haksoo */
 ```
 
-## SCSS
-
-- 아직은 아무생각이 없음.
-- 폴더구조 정리....
-- bootstrap 관련 내용도 정리해야 하나.....
+- [SMACSS 방법론](http://smacss.com/)을 사용하여 진행한다.
 
 ## JavaScript
 
-- strict 모드를 기본으로 사용한다.(ie9 를 맞춰야 하는 경우 생략할수 있다.)
+- 가능한 strict 모드를 기본으로 사용한다.(ie9 를 맞춰야 하는 경우 생략할수 있다.)
 
 ```javascript
 'use strict';
@@ -131,16 +127,13 @@ function () {
 
 - 시멘틱을 최대한 고려한다.
 - 스타일이나 기능을 위한 id는 가능한 배제한다.(필요한 경우만 사용)
-- 모듈중심의 스타일을 정의할땐 BEM 정의를 따른다. - 작업해보고 확정.
-- 레이아웃 또는 스타일 중심의 스타일을 정의할땐 OOCSS 정의를 따른다. - 작업해보고 확정.
-- BEM, OOCSS 등의 방법론은 사용해보고 고민해보고 결정해야할듯...
+- 네이밍 스타일은 케밥 케이스(kebab-case)를 사용한다.
 
 ## Image File Name
 
-- 약속어를 미리 정하고 사용한다.([NHN Coding Convention](http://nuli.navercorp.com/sharing/fe/coding) 을 참조한다.)
+- 약속어를 미리 정하고 사용한다. (예: [NHN Coding Convention](http://nuli.navercorp.com/sharing/fe/coding) - B.1 네이밍 약속어 참조)
 - 형태, 목적(의미), 상태 순서로 이름을 정한다.
-
-> btn_reg_over.png
+- 네이밍 스타일은 스네이크 케이스(snake_case)를 사용한다.
 
 ## Etc File Name
 
