@@ -66,6 +66,12 @@
 <!-- / .container -->
 ```
 
+### 참조
+
+- https://html5boilerplate.com/
+
+===
+
 ## CSS
 
 - 공통 스타일은 'common.css'로, 그 외는 화면이나 목적에 맞는 이름을 부여한다.
@@ -82,7 +88,7 @@
  */
 ```
 
-- 속성값을 따옴표로 감싸야 하는 경우에만(가능한 생략한다.) 작은따옴표`' '`를 사용하여 감싼다.
+- 속성값을 따옴표로 감싸야 하는 경우에만 - 가능한 생략한다. 작은따옴표`' '`를 사용하여 감싼다.
 
 ```css
 font-family: 'dotum';
@@ -90,13 +96,25 @@ font-family: 'dotum';
 
 - 속성은 한줄에 한줄씩 처리한다.
 - 되도록 class 셀렉터를 사용한다.
+- 기본 네이밍 스타일은 케밥 케이스(kebab-case)를 사용한다.
+- 오직 스크립트만을 위한 클래스는 'js-' 접두어를 붙여 사용한다.
 - 여럿이 프로젝트를 진행할땐, 추가 또는 수정한 부분은 날짜와 수정내용, 작성자 등을 간략하게 기입한다.
 
 ```css
-/* li width 값 수정 - 20150511 haksoo */
+/* li width 값 수정 - 2019-10-15 - 😄 haksoo */
 ```
 
-- [SMACSS 방법론](http://smacss.com/)을 사용하여 진행한다.
+- CSS 파일 구성은 [SMACSS](http://smacss.com/) 를 따른다.
+- 기본 테그 및 유틸 성격의 클래스 스타일을 정의할땐 OOCSS 를 따른다.
+- 모듈 기반의 클래스 스타일을 정의할땐 [BEM](http://getbem.com/) 을 따른다.
+
+### 참조
+
+- https://gomdoreepooh.github.io/notes/smacss-bem-oocss
+- https://mytory.net/archives/8986
+- https://frontdev.tistory.com/entry/CSS-%EB%B0%A9%EB%B2%95%EB%A1%A0Methodologies
+
+===
 
 ## JavaScript
 
@@ -108,6 +126,7 @@ font-family: 'dotum';
 
 - 글러벌 변수는 필요한 경우 외에는 사용하지 않는다.
 - 함수 선언식 보다 함수 표현식 사용을 권장.
+- 네이밍 스타일은 카멜 케이스(camelCase)를 사용한다.
 - Vender 등 특별한 경우 외에는 HTML 문서 최하단 `</body>` 위에 정의한다.
 - 문자열은 작은 따옴표`' '`를 사용하여 감싼다.(json 등 특별한 상황 제외)
 
@@ -122,6 +141,8 @@ function () {
   // todo
 }
 ```
+
+===
 
 ## ID & Class Name
 
@@ -139,3 +160,4 @@ function () {
 
 - 공통으로 사용되는 파일은 'common'이란 이름을 사용한다.
 - 서비스 내용을 파일 이름으로 사용한다.
+- 네이밍 스타일은 프로젝트별 상황에 맞게 사용하나 기본적으로 케밥 케이스(kebab-case)를 사용한다.
