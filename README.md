@@ -68,9 +68,9 @@
 
 ### 참조
 
-- https://html5boilerplate.com/
+- https://github.com/h5bp/html5-boilerplate
 
-===
+---
 
 ## CSS
 
@@ -114,7 +114,7 @@ font-family: 'dotum';
 - https://mytory.net/archives/8986
 - https://frontdev.tistory.com/entry/CSS-%EB%B0%A9%EB%B2%95%EB%A1%A0Methodologies
 
-===
+---
 
 ## JavaScript
 
@@ -142,7 +142,7 @@ function () {
 }
 ```
 
-===
+---
 
 ## ID & Class Name
 
