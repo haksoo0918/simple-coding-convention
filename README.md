@@ -3,7 +3,7 @@
 ## 공통
 
 - 인코딩은 UTF-8을 기본으로 한다.
-- 들여쓰기는 1탭으로 하고 탭크기는 4로 한다.
+- 들여쓰기는 2공백으로 한다.
 - 빈줄은 두줄이상 사용하지 않는다.
 - 주석의 성격에 따라 목적을 명시한다.
   - 변수나 함수의 상세설명을 주석의 기본으로 하고 따로 목적을 명시하지 않는다.
@@ -47,7 +47,7 @@
 - 속성순서 필수속성(img 에 alt 등) > id > class > 기타 속성 > data 속성 > 속성값을 할당하지 않아도 되는 속성(input 에 require, readonly 등)
 
 ```html
-<button id="btn_reg" class="btn btn-primary" type="submit" title="등록" data-toggle="tooltip" disabled>등록</button>
+<input type="submit" name="name" id="name" class="form-control"  title="이름" data-toggle="tooltip" readonly>
 ```
 
 - 단일테그 끝에 마침표시는 생략한다.(br 등)
@@ -79,7 +79,7 @@
 
 ```css
 /**
- * 프로젝트 명 - 목적 style
+ * project: 프로젝트명
  * file name: 목적.css
  * author: [이름, ..]
  * modify: [이름, ..]
@@ -88,7 +88,7 @@
  */
 ```
 
-- 속성값을 따옴표로 감싸야 하는 경우에만 - 가능한 생략한다. 작은따옴표`' '`를 사용하여 감싼다.
+- 속성값을 따옴표로 감싸야 하는 경우에만 사용하고, 가능한 생략한다. 따옴표도 작은따옴표`' '`를 사용하여 감싼다.
 
 ```css
 font-family: 'dotum';
@@ -101,7 +101,7 @@ font-family: 'dotum';
 - 여럿이 프로젝트를 진행할땐, 추가 또는 수정한 부분은 날짜와 수정내용, 작성자 등을 간략하게 기입한다.
 
 ```css
-/* li width 값 수정 - 2019-10-15 - 😄 haksoo */
+/* li width 값 수정 - 2019-10-15 - haksoo */
 ```
 
 - CSS 파일 구성은 [SMACSS](http://smacss.com/) 를 따른다.
@@ -126,20 +126,26 @@ font-family: 'dotum';
 
 - 글러벌 변수는 필요한 경우 외에는 사용하지 않는다.
 - 함수 선언식 보다 함수 표현식 사용을 권장.
+
+```js
+// 함수 선언식
+function getData() {
+  // ...
+}
+
+// 함수 표현식
+var getData = function() {
+  // ...
+};
+```
+
+- 제어문이나 함수 등에서 블럭 중괄호는 같은 줄에서 시작한다.
 - 네이밍 스타일은 카멜 케이스(camelCase)를 사용한다.
 - Vender 등 특별한 경우 외에는 HTML 문서 최하단 `</body>` 위에 정의한다.
 - 문자열은 작은 따옴표`' '`를 사용하여 감싼다.(json 등 특별한 상황 제외)
 
 ```javascript
 var str = 'Hello World';
-```
-
-- 제어문이나 함수 등에서 블럭 중괄호는 같은 줄에서 시작한다.
-
-```javascript
-function () {
-  // todo
-}
 ```
 
 ---
